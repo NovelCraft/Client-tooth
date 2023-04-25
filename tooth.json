@@ -1,0 +1,36 @@
+{
+    "format_version": 1,
+    "tooth": "github.com/novelcraft/client-tooth",
+    "version": "0.1.0",
+    "information": {
+        "name": "NovelCraft Client",
+        "description": "NovelCraft Client is a software application that allows players to connect to NovelCraft Servers and play the game online.",
+        "author": "NovelCraft",
+        "license": "LGPL-3.0",
+        "homepage": "https://novelcraft.games"
+    },
+    "placement": [
+        {
+            "source": "common/*",
+            "destination": "*"
+        },
+        {
+            "source": "StandaloneLinux64/*",
+            "destination": "*",
+            "GOOS": "linux",
+            "GOARCH": "amd64"
+        },
+        {
+            "source": "StandaloneOSX/*",
+            "destination": "*",
+            "GOOS": "darwin",
+            "GOARCH": "amd64"
+        },
+        {
+            "source": "StandaloneWindows64/*",
+            "destination": "*",
+            "GOOS": "windows",
+            "GOARCH": "amd64"
+        }
+    ]
+}
